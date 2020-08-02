@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - WAKA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="flex-betw">
+        <div class="header-logo">
+            <img src="img/admin.png" alt="">
+        </div>
+        <div class="header-admin flex-betw">
+            <h3 href="">Login</h3>
+            <h3 href="">Logout</h3>
+        </div>
+    </header>
+
+    <main class="flex-betw">
+        <aside class="flex-betw">
+            <ul>
+                <h3>MANAGER</h3>
+                <li>
+                    <a href=""></a>HOME</li>
+                <li>
+                    <a href="">Quản lý danh mục</a>
+                </li>
+                <li>
+                    <a href="">Quản lý tác giả</a>
+                </li>
+                <li>
+                    <a href="">Quản lý sản phẩm</a>
+                </li>
+            </ul>
+            <h3 href=""><a href="">Logout</a></h3>
+
+        </aside>
+        <article>
+            <section>
+                <h2>Thêm sản phẩm</h2>
+
+                <form action="" method="post" class="flex-betw" enctype="multipart/form-data">
+                    <div class="form-id">
+                        <label for="id">ID</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div class="form-name">
+                        <label for="name">Tên sản phẩm</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-price">
+                        <label for="price">Giá (USD)</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                    <div class="form-iddm">
+                        <label for="iddm">ID danh mục</label>
+                        <select name="iddm" id="iddm"></select>
+                    </div>
+                    <div class="form-idtg">
+                        <label for="idtg">ID tác giả</label>
+                        <select name="idtg" id="idtg"></select>
+                    </div>
+                    <div class="form-hot">
+                        <label for="hot">HOT</label>
+                        <input type="checkbox" name="hot" id="hot">
+                    </div>
+                    <div class="form-hinh">
+                        <input type="file" name="img" id="hinh">
+                    </div>
+
+                    <button>ADD</button>
+                </form>
+
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>IDdm</th>
+                        <th>IDtg</th>
+                    </tr>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        Copyright &copy; by Bảo Kun
+    </footer>
+</body>
+
+</html>
